@@ -79,7 +79,8 @@ header{
         padding: 0 0.5rem;
     }
     .navbar-nav-custom{
-        position: absolute;
+        position: fixed;
+        overflow: hidden;
         left:-100%;
         top:10vh;
         width:100%;
@@ -176,6 +177,20 @@ header{
 }
 .card-img-top{
     height: 13rem;
+}
+.btn-front{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.btn-front:hover{
+    background-color: #fff;
+    color:var(--primary-color)
+}
+.btn-outline-danger{
+    border-color: var(--primary-color);
+}
+.btn-outline-danger:hover{
+    background-color:var(--primary-color);
 }
 
 /*----------------------- About Us Section ----------------------------*/
