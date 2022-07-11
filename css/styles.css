@@ -42,7 +42,13 @@ nav ul li a{
 .justify-content-between{
 	justify-content: space-between;
 }
-/*header*/
+/*
+	===================
+		HEADER 
+		and 
+		NAVBAR
+	===================
+*/
 .header{
 	background-image: linear-gradient(to right top, #ff565b, #fa595d, #f65c5e, #f15f60, #ec6161);
 	padding: 12px 0;
@@ -129,6 +135,14 @@ nav ul li a{
 .nav-toggler.active span::after{
 	transform: rotate(135deg);
 }
+/*
+	  Media Query For
+	===================
+		HEADER 
+		and 
+		NAVBAR
+	===================
+*/
 @media screen and (max-width:1024px){
 	.header{
 		letter-spacing: 1px;
@@ -161,7 +175,19 @@ nav ul li a{
    }
 }
 
-
+/*
+	===================
+		HERO 
+		CAROUSEL
+	===================
+*/
+.hero{
+    background-color: gray;
+    height: 90vh;
+}
+.carousel{
+    height: 100%;
+}
 .carousel-item {
 	height: 90vh;
 	min-height: 350px;
@@ -174,19 +200,18 @@ nav ul li a{
 	-o-background-size: cover;
 	background-size: cover; */
   }
+  /*
+  	Media Query for
+	===================
+		HERO 
+		CAROUSEL
+	===================
+*/
   @media screen and (max-width:768px) {
 	.carousel-item{
 		background-position: center;
 	}
   }
-.hero{
-    background-color: gray;
-    height: 90vh;
-}
-.carousel{
-    height: 100%;
-}
-
 /* ---------------------- Discount Offer ----------------------------- */
 .discount-offer-full-container{
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -196,6 +221,36 @@ nav ul li a{
 	font-size: 1.5rem;
 	margin-top: 0.5rem;
 	font-family: 'Dancing Script', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+	.discount-offer span img{
+		width:150px;
+	}
+}
+@media only screen and (max-width: 545px) {
+	.discount-offer span img{
+		width:120px;
+	}
+	.discount-offer{
+		font-size: 1.2rem	;
+	}
+}
+@media only screen and (max-width: 446px) {
+	.discount-offer span img{
+		width:100px;
+	}
+	.discount-offer{
+		font-size: 1rem	;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.discount-offer span img{
+		width:70px;
+	}
+	.discount-offer{
+		font-size: 1rem	;
+	}
 }
 /* ----------Services Section---------- */
 .services h2,.about-us h2,.contact-us h2,.gallery h2 {
@@ -387,7 +442,9 @@ nav ul li a{
 .img-container img {
   width: 250px;
   height: 150px;
-  /* border:5px double #ff565b; */
+  border: 5px solid;
+  /* border-image: linear-gradient(45deg, turquoise, greenyellow) 1; */
+  border-image: linear-gradient(45deg, #ff565b, #ff7440, #fe9422, #edb400, #d3d20d) 1;
   object-fit: cover;
 }
 
