@@ -8,6 +8,9 @@
     --dark: #212121;
     --light: #F3F3F3;
 }
+html{
+	overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
