@@ -207,6 +207,7 @@ nav ul li a{
 	-o-background-size: cover;
 	background-size: cover; */
   }
+  
   .carousel-caption h5{
 	font-size: 3rem;
   }
@@ -234,8 +235,9 @@ nav ul li a{
 */
   @media screen and (max-width:768px) {
 	.carousel-item{
-		background-position: center;
+		background-position:center;
 	}
+	
   }
 /*
 	===================
@@ -352,9 +354,8 @@ nav ul li a{
     height:100%;
     backface-visibility: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color:#000;
+	color:#000;
     transform:rotateY(180deg);
-	/* background-image: linear-gradient(to right top, #ff565b, #fb5c57, #f76253, #f26850, #ee6d4d); */
 }
 .back-p1,.back-p2{
 	width: 80%;
@@ -397,6 +398,11 @@ nav ul li a{
 }
 .btn-back{
 	margin-top: 0.5rem;
+}
+.credits-text{
+	color:rgb(34, 15, 136);
+	text-decoration: underline;
+	font-size:12px;
 }
 /*
 	===================
@@ -541,10 +547,27 @@ nav ul li a{
 .gallery{
 	margin-top:1.5rem;
 }
-.gallery-box {
+.gallery-box{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.carpentry-gallery,.ac-gallery,.false-ceiling-gallery,.painting-putty-gallery,.electric-gallery,.tiles-marbles-gallery,.sliding-gallery{
+	width:100%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-bottom: 1rem;
+}
+.gallery-heading{
+	margin-top: 1.5rem;
+	font-style: italic;
+}
+.gallery-flex{
+	display: flex;
+	justify-content: space-evenly;	
+	flex-wrap: wrap;
+	padding-bottom: 1rem;
+	/* border-bottom: 2px solid #ec6161; */
+	
 }
 .img-container {
   margin-top: 1rem;
