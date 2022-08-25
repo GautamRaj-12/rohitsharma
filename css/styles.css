@@ -396,7 +396,7 @@ nav ul li a{
 .btn-outline-danger:hover{
     background-color:var(--primary-color);
 }
-.btn-back{
+.btn-back,.rate-button{
 	margin-top: 0.5rem;
 }
 .credits-text{
@@ -559,7 +559,7 @@ nav ul li a{
 }
 .gallery-heading{
 	margin-top: 1.5rem;
-	font-style: italic;
+	font-family: 'Dancing Script', cursive;
 }
 .gallery-flex{
 	display: flex;
@@ -834,3 +834,4 @@ footer{
 	letter-spacing: 5px;
 	padding: 1rem;
   }
+  
